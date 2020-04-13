@@ -1,0 +1,40 @@
+@import './fonts';
+
+// Poster
+.poster{
+    &-item{
+        padding: 1rem 0rem 2rem;
+    }
+    &-img{
+        width: 100%;
+    }
+    .slick{
+        &-current{
+            position: relative;
+            .poster-img{
+                transform: scale(1.1);
+                box-shadow: 0 .25rem .5rem rgba(black,.15);
+                transition: all .3s ease;
+            }
+        }
+    }
+}
+
+// Footer
+footer{
+    background-color: black;
+    color:white;
+    padding: 1rem 0;
+    .footer{
+        &-icon{
+max-width: 100%;
+        }
+    }
+    @media (min-width: 992px) { 
+        .footer{
+            &-icon{
+    max-height: 2.5rem;
+            }
+        }
+     }
+}
