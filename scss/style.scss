@@ -87,13 +87,18 @@ main {
 
             li {
                 background-position: left center;
-                background-size: auto;
+                background-size: auto 100%;
                 @include rfs(40px, height);
             }
         }
 
         .form {
-
+            &-group{
+                
+                @media (max-width: 1199.98px) { 
+                    margin-bottom: 0;
+                 }
+            }
             &-control {
                 border-width: 0;
                 background-color: transparent;
@@ -207,7 +212,6 @@ main {
         }
 
         &-dots {
-            text-align: right;
 
             li {
                 width: 32px;
@@ -231,6 +235,9 @@ main {
                     }
                 }
             }
+            @media (min-width: 1200px) { 
+                text-align: right;
+             }
         }
     }
 }
