@@ -118,6 +118,10 @@ main {
                     height: 25px;
                 }
 
+                @media (min-width: 1200px) {
+                    margin-bottom: 1.5rem;
+                }
+
                 @media (max-width: 575.98px) {
                     &:nth-child(1) {
                         height: 22px;
